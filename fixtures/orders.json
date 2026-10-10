@@ -1,0 +1,22 @@
+[
+  {
+    "orderId": "ORDER-001",
+    "daysSincePayment": 2,
+    "amount": 900
+  },
+  {
+    "orderId": "ORDER-002",
+    "daysSincePayment": 5,
+    "amount": 1500
+  },
+  {
+    "orderId": "ORDER-003",
+    "daysSincePayment": 10,
+    "amount": 3000
+  },
+  {
+    "orderId": "ORDER-004",
+    "daysSincePayment": 16,
+    "amount": 6000
+  }
+]
