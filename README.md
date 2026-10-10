@@ -1,6 +1,6 @@
 # DataMPC 订单退款演练
 
-当前功能版本：1.0.0。当前有效行为以 docs/current-status.md、
+当前功能版本：1.1.0-rc.1。当前有效行为以 docs/current-status.md、
 docs/refund-api.md 和 backend/refund-policy.json 为准。
 
 这是用于知识检索和团队协作的最小样例，不连接真实支付服务。

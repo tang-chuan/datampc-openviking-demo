@@ -1,9 +1,9 @@
 // 当前版本的前端请求构造及页面行为约定。
 export const uiPolicy = {
-  "version": "1.0.0",
-  "requestIdRequired": false,
+  "version": "1.1.0-rc.1",
+  "requestIdRequired": true,
   "reasonRequired": false,
-  "disableSubmitWhilePending": true,
+  "disableSubmitWhilePending": false,
   "asyncRefund": false
 };
 
