@@ -1,11 +1,12 @@
 # 当前缺陷和限制
 
-## BUG-101：连续点击可能创建两次退款
+## BUG-101：修复待验收
 
-状态：OPEN。前端负责人：zhangsan；后端负责人：admin。
-复现：一次请求未返回时再点击退款。当前 uiPolicy.disableSubmitWhilePending=false；
-两次 buildRefundRequest 未传入相同 requestId 时会生成不同 ID。
-后端只对相同 X-Request-ID 幂等，因此无法合并这两次请求。
-修复要求：提交期间禁用按钮，同一次用户操作重试时复用 requestId。
-验收：连续点击只有一次请求；网络重试使用原 ID。
-对应证据：frontend/refund.mjs。当前模拟函数不包含真实页面事件绑定。
+状态：FIXED_PENDING_QA。uiPolicy.disableSubmitWhilePending=true；
+页面接入时必须实际执行禁用，并为同一次操作保留 requestId。
+配置和请求构造函数已经更新，但尚无真实浏览器页面，因此不能声称完成 UI 验收。
+
+## TASK-202：异步退款任务查询
+
+状态：TODO。当前只能返回 taskId 和 PENDING，尚未实现查询接口或任务执行。
+不能声称异步退款已完成端到端验证。

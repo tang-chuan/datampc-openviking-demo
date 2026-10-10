@@ -1,10 +1,10 @@
 // 当前版本的前端请求构造及页面行为约定。
 export const uiPolicy = {
-  "version": "1.1.0-rc.1",
+  "version": "1.2.0-dev.1",
   "requestIdRequired": true,
-  "reasonRequired": false,
-  "disableSubmitWhilePending": false,
-  "asyncRefund": false
+  "reasonRequired": true,
+  "disableSubmitWhilePending": true,
+  "asyncRefund": true
 };
 
 export function buildRefundRequest(order, reason = "", requestId = undefined) {

@@ -1,9 +1,9 @@
 {
-  "version": "1.1.0-rc.1",
-  "refund_window_days": 7,
-  "max_refund_amount_yuan": 2000,
+  "version": "1.2.0-dev.1",
+  "refund_window_days": 14,
+  "max_refund_amount_yuan": 5000,
   "request_id_required": true,
-  "reason_required": false,
-  "async_refund": false,
+  "reason_required": true,
+  "async_refund": true,
   "partial_refund_supported": false
 }
